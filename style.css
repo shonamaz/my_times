@@ -142,7 +142,25 @@ ul {
 
 .story-container {
   width: 300px;
+  display: flex;
 }
+
+.orca-order {
+  order: 1;
+}
+
+.burger-order {
+  order: 2;
+}
+
+.earth-order {
+  order: 3;
+}
+
+.camera-order {
+  order: 4;
+}
+
 .story {
     font-family: Georgia;
     font-size: 17px;
