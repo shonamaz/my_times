@@ -54,8 +54,9 @@
   display: flex;
   width: 630px;
   border: 1px solid green;
-  flex-direction: column;
+  flex-direction: row;
   padding: 10px;
+  margin: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -66,6 +67,7 @@
   border: 1px solid red;
   flex-direction: column;
   padding: 10px;
+  margin: 10px;
 }
 
 .column.small {
@@ -74,6 +76,8 @@
   border: 1px solid blue;
   flex-direction: column;
   padding: 20px;
+  margin: 10px;
+  align-items: center;
 }
 
 .featured-img-text {
@@ -87,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -102,6 +106,25 @@ h3 {
     height: 240px;
     width: 629px;
 
+}
+
+ul {
+
+}
+
+.ad-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ad-row {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 10px;
 }
 
 .jumbo-tron-text {
@@ -150,4 +173,11 @@ h3 {
     font-size: 30px;
     color: white;
     text-align: center;
+}
+
+footer {
+background-color: MediumAquamarine;
+margin: auto;
+font-family: Verdana;
+font-size: 12px;
 }
