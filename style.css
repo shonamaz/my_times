@@ -1,4 +1,9 @@
 
+body {
+  display: block;
+  margin: 0;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -9,9 +14,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 80px;
   border-bottom: 1px solid black;
   background-color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .logo {
@@ -42,43 +48,30 @@
 
 .main-container {
   display: flex;
-  position: relative;
-  top: 170px;
-  width: 100%;
+  width: 1232px;
   background color: white;
-  z-index: 1;
-  justify-content: center;
+  margin: 0 auto 78px auto;
+  padding-top: 120px;
 }
 
-.column.large {
+.column {
   display: flex;
-  width: 630px;
-  flex-direction: row;
-  padding: 10px;
-  margin: 10px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: 30px;
 }
+
+
 
 .column.medium {
-  display: flex;
   width: 300px;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
 }
 
 .column.small {
-  display: flex;
   width: 240px;
-  flex-direction: column;
-  padding: 20px;
-  margin: 10px;
-  align-items: center;
 }
 
-.featured-img-text {
 
+.featured-img-text {
   color: white;
 }
 
@@ -92,71 +85,67 @@ h2 {
   font-weight: bold;
 }
 
+.column h2 {
+  text-align: center;
+}
+
 h3 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
-.jumbo-tron {
-    display: flex;
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-    height: 240px;
-    width: 629px;
+/* First News Column */
 
-}
-
-ul {
-
-}
-
-.ad-block {
+.main-story {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
-.ad-row {
-  background-color: WhiteSmoke;
-  font-family: Verdana;
-  font-size: 12px;
-  color: DimGray;
-  width: 100%;
-  border-bottom: 1px solid black;
-  padding: 10px 0px 10px 10px;
+
+.jumbo-tron {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+    height: 240px;
+    width: 630px;
+
 }
+
+
+.column.large {
+  width: 630px;
+}
+
+
 
 .jumbo-tron-text {
     font-family: Georgia;
     font-weight: bold;
     font-size: 40px;
     color: white;
-    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-.main-story {
+
+.narrative-main {
     font-family: Georgia;
     font-size: 17px;
     color: black;
 }
 
+.stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story-column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
 .story-container {
   width: 300px;
   display: flex;
-}
-
-.orca-order {
-  order: 1;
-}
-
-.burger-order {
-  order: 2;
-}
-
-.earth-order {
-  order: 3;
-}
-
-.camera-order {
-  order: 4;
+  flex-direction: column;
 }
 
 .story {
@@ -189,6 +178,22 @@ ul {
     font-size: 30px;
     color: white;
     text-align: center;
+}
+
+
+.ad-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ad-row {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 10px;
 }
 
 .footer {
